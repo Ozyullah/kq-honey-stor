@@ -31,7 +31,10 @@ const HotDeals = () => {
                     <div className="card-body">
 
                         <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <h3 className='flex justify-start text-sky-400'>৳950</h3>
+                        <div className='flex justify-between'>
+                            <h3 className='flex justify-start text-sky-400'>৳500</h3>
+                            <button className='btn btn-link text-sky-400'>Show more</button>
+                        </div>
                     </div>
                 </div>
 
@@ -43,7 +46,10 @@ const HotDeals = () => {
 
                         <p>If a dog chews shoes whose shoes does he choose?</p>
 
-                        <h3 className='flex justify-start text-sky-400'>৳3500</h3>
+                        <div className='flex justify-between'>
+                            <h3 className='flex justify-start text-sky-400'>৳300</h3>
+                            <button className='btn btn-link text-sky-400'>Show more</button>
+                        </div>
                     </div>
                 </div>
 
@@ -55,7 +61,10 @@ const HotDeals = () => {
 
                         <p>If a dog chews shoes whose shoes does he choose?</p>
 
-                        <h3 className='flex justify-start text-sky-400'>৳11400</h3>
+                        <div className='flex justify-between'>
+                            <h3 className='flex justify-start text-sky-400'>৳500</h3>
+                            <button className='btn btn-link text-sky-400'>Show more</button>
+                        </div>
                     </div>
                 </div>
 
@@ -68,7 +77,10 @@ const HotDeals = () => {
 
                         <p>If a dog chews shoes whose shoes does he choose?</p>
 
-                        <h3 className='flex justify-start text-sky-400'>৳250</h3>
+                        <div className='flex justify-between'>
+                            <h3 className='flex justify-start text-sky-400'>৳200</h3>
+                            <button className='btn btn-link text-sky-400'>Show more</button>
+                        </div>
 
                     </div>
                 </div>

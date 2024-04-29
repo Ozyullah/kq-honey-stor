@@ -10,6 +10,7 @@ import Login from "../../../Single-pages/WebSecurity/LoginPage/Login";
 import Honey from "../../../Single-pages/HoneyItems/Honey";
 import Category from "../../Category/Category";
 import Shops from "../../../Single-pages/OnlineShops/Shops/Shops";
+import SignUp from "../../../Single-pages/WebSecurity/CreateAC/SignUp";
 
 
 
@@ -58,6 +59,14 @@ export const router =createBrowserRouter([
             {
                 path:"/shops",
                 element:<Shops></Shops>
+            },
+            {
+                path:"/signUp",
+                element:<SignUp></SignUp>
+            },
+            {
+                path:"/login",
+                element:<Login></Login>
             }
         ])
     }
