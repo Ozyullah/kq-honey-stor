@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Pages/Shared-pages/Header/Header';
+import Home from './Pages/Single-pages/Home/Home';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './Pages/Shared-pages/LeashPages/PagesRouter/LinkedPages';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Header></Header> */}
+
+      <RouterProvider router={router}></RouterProvider>
+
+      {/* <Home></Home> */}
+
+      <script src="https://kit.fontawesome.com/fc18c0a387.js" crossorigin="anonymous"></script>
     </div>
   );
 }
