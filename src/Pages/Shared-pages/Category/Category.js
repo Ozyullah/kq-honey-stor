@@ -5,10 +5,11 @@ import img3 from '../../../Images/electric.jpg';
 import img4 from '../../../Images/fashion.png';
 import img5 from '../../../assets/honey-.jpg';
 
-import { Carousel } from 'flowbite-react';
-import { Link } from 'react-router-dom';
+// import { Carousel } from 'flowbite-react';
+import { Link, useLoaderData } from 'react-router-dom';
 
 const Category = () => {
+    // items =useLoaderData();
     return (
         <div className=' flex justify-between gap-5 lg:px-36 px-5 py-5'>
 

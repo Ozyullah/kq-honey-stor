@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import fan from "../../../assets/fan1.jpg"
 import fan2 from "../../../assets/fan3.png"
 import fan3 from "../../../assets/fan4.jpg"
@@ -9,10 +9,13 @@ import bulb3 from "../../../assets/bulb2.jpg"
 import soc from "../../../assets/soket.png"
 import soc1 from "../../../assets/soket3.png"
 import soc2 from "../../../assets/soket2.jpeg"
+import BookNow from '../../Shared-pages/BokingSystem/BookNow';
 
 
 
 const Electronics = () => {
+
+    const [booking, setBooking]=useState('')
     return (
         <div className='lg:px-36 mb-5'>
 
@@ -26,6 +29,10 @@ const Electronics = () => {
 
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                         <h3 className='flex justify-start text-sky-400'>৳3000</h3>
+
+                        <label htmlFor="booking-modal"
+                            onClick={()=>setBooking("")}
+                            className="btn btn-sm btn-outline text-sky-500">Book Now</label>
                     </div>
                 </div>
 
@@ -38,6 +45,9 @@ const Electronics = () => {
 
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                         <h3 className='flex justify-start text-sky-400'>৳60</h3>
+                        <label htmlFor="booking-modal"
+                            onClick={()=>setBooking("")}
+                            className="btn btn-sm btn-outline text-sky-500">Book Now</label>
                     </div>
                 </div>
 
@@ -49,6 +59,9 @@ const Electronics = () => {
 
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                         <h3 className='flex justify-start text-sky-400'>৳300</h3>
+                        <label htmlFor="booking-modal"
+                            onClick={()=>setBooking("")}
+                            className="btn btn-sm btn-outline text-sky-500">Book Now</label>
                     </div>
                 </div>
 
@@ -60,6 +73,9 @@ const Electronics = () => {
 
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                         <h3 className='flex justify-start text-sky-400'>৳400</h3>
+                        <label htmlFor="booking-modal"
+                            onClick={()=>setBooking("")}
+                            className="btn btn-sm btn-outline text-sky-500">Book Now</label>
                     </div>
                 </div>
 
@@ -72,6 +88,9 @@ const Electronics = () => {
 
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                         <h3 className='flex justify-start text-sky-400'>৳4000</h3>
+                        <label htmlFor="booking-modal"
+                            onClick={()=>setBooking("")}
+                            className="btn btn-sm btn-outline text-sky-500">Book Now</label>
                     </div>
                 </div>
 
@@ -82,11 +101,18 @@ const Electronics = () => {
                     <div className="card-body">
 
                         <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <h3 className='flex justify-start text-sky-400'>৳400</h3>
+                        <h3 className='flex justify-start text-sky-400'>৳400</h3> 
+                        <label htmlFor="booking-modal"
+                            onClick={()=>setBooking("")}
+                            className="btn btn-sm btn-outline text-sky-500">Book Now</label>
                     </div>
                 </div>
 
             </div>
+
+            <BookNow>
+                setBooking={setBooking}
+            </BookNow>
         </div>
     );
 };

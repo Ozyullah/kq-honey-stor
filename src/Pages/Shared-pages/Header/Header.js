@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { BsSearch } from "react-icons/bs";
 import { BsCart4 } from "react-icons/bs";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { WebContext } from '../../../Context/AuthContext/AuthContext';
 
 const Header = () => {
+
+    const {logOut,user}=useContext(WebContext)
+    
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch((error) => {
+                console.log(error)
+            })
+    }
+
+
     return (
         <div className=' bg-sky-200 lg:px-36'>
             <div className="navbar">
@@ -25,7 +38,7 @@ const Header = () => {
                             <li><a>Item 3</a></li>
                         </ul>
                     </div> */}
-                    <Link to={'/'} className="btn btn-circle text-xl">daisyUI</Link>
+                    <Link to={'/'} className="btn btn-circle text-xl">Unity</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
 
@@ -93,7 +106,7 @@ const Header = () => {
                         <div className="dropdown dropdown-end">
                             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">
-                                    <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                    <img alt="Tailwind CSS Navbar component" src={user?.photoURL} />
                                 </div>
                             </div>
                             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -104,7 +117,7 @@ const Header = () => {
                                     </a>
                                 </li>
                                 <li><a>Settings</a></li>
-                                <li><a>Logout</a></li>
+                                <li><Link onClick={handleLogOut}>Logout</Link></li>
                                 <li><Link to={"/login"}>Login</Link></li>
                             </ul>
                         </div>

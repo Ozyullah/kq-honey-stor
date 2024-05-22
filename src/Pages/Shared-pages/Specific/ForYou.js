@@ -5,6 +5,7 @@ import fa1 from "../../../assets/fan5.jpg";
 import ts from "../../../assets/t-shirt8.png";
 // import bord from "../../../assets/asus mathe.jpeg";
 import ts2 from "../../../assets/t-shirt3.jpeg"
+import ReactImageMagnify from 'react-image-magnify';
 
 
 
@@ -27,7 +28,22 @@ const ForYou = () => {
             <div className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5'>
 
                 <div className="card card-compact bg-base-100 shadow-xl">
-                    <figure><img src={wa1} alt="Shoes" className='h-72' /></figure>
+                    {/* <figure><img src={wa1} alt="Shoes" className='h-72' /></figure> */}
+
+                    <ReactImageMagnify {...{
+                        smallImage: {
+                            // alt: 'Wristwatch by Ted Baker London',
+                            isFluidWidth: true,
+                            src: wa1
+                        },
+                        largeImage: {
+                            src: wa1,
+                            width: 300,
+                            height: 700,
+                            // zIndex: 50
+                        },
+                        enlargedImagePosition: "over"
+                    }} />
                     <div className="card-body">
 
                         <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -38,7 +54,22 @@ const ForYou = () => {
 
 
                 <div className="card card-compact bg-base-100 shadow-xl">
-                    <figure><img src={fa1} alt="Shoes" /></figure>
+                    {/* <figure><img src={fa1} alt="Shoes" /></figure> */}
+
+                    <ReactImageMagnify {...{
+                        smallImage: {
+                            // alt: 'Wristwatch by Ted Baker London',
+                            isFluidWidth: true,
+                            src: fa1
+                        },
+                        largeImage: {
+                            src: fa1,
+                            width: 300,
+                            height: 700,
+                            zIndex: 50
+                        },
+                        enlargedImagePosition: "over"
+                    }} />
                     <div className="card-body">
 
                         <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -50,7 +81,22 @@ const ForYou = () => {
 
 
                 <div className="card card-compact bg-base-100 shadow-xl">
-                    <figure><img src={ts} alt="Shoes" /></figure>
+                    {/* <figure><img src={ts} alt="Shoes" /></figure> */}
+
+                    <ReactImageMagnify {...{
+                        smallImage: {
+                            // alt: 'Wristwatch by Ted Baker London',
+                            isFluidWidth: true,
+                            src: ts
+                        },
+                        largeImage: {
+                            src: ts,
+                            width: 300,
+                            height: 700,
+                            zIndex: 50
+                        },
+                        enlargedImagePosition: "over"
+                    }} />
                     <div className="card-body">
 
                         <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -60,7 +106,25 @@ const ForYou = () => {
 
 
                 <div className="card card-compact bg-base-100 shadow-xl">
-                    <figure><img src={ts2} alt="Shoes" /></figure>
+                    {/* <figure><img src={ts2} alt="Shoes" /></figure> */}
+
+
+                    <ReactImageMagnify {...{
+                        smallImage: {
+                            // alt: 'Wristwatch by Ted Baker London',
+                            isFluidWidth: true,
+                            src: ts2
+                        },
+                        largeImage: {
+                            src: ts2,
+                            width: 300,
+                            height: 700,
+                            lensStyle: { zIndex: -50 }
+                        },
+                        isHintEnabled: true,
+                        enlargedImagePosition:"over"
+
+                    }} />
                     <div className="card-body">
 
                         <p>If a dog chews shoes whose shoes does he choose?</p>

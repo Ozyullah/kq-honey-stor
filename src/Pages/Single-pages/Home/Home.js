@@ -8,6 +8,7 @@ import HotDeals from '../../Shared-pages/Deals/HotDeals/HotDeals';
 import ForYou from '../../Shared-pages/Specific/ForYou';
 import Shorts from '../../Shared-pages/VideoPlayer/ShortsVideo/Shorts';
 import Populer from '../../Shared-pages/MostPopuler/Populer';
+import Shiping from '../ShipingRelated/Shiping';
 // import Populer from '../../Shared-pages/Populer/Populer';
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
             <Category></Category>
             <HotDeals></HotDeals>
             <ForYou></ForYou>
+            <Shiping></Shiping>
             <Populer></Populer>
         </div>
     );

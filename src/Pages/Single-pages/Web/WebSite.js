@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import i1 from '../../../assets/Blog-scaled.jpg';
 import i2 from '../../../assets/ecommart.jpg';
 import i3 from '../../../assets/educational.jpg';
 import i4 from '../../../assets/resturent.png';
 import i5 from '../../../assets/parttimejob.png';
 import i6 from '../../../assets/marketing.jpg';
+import BookNow from '../../Shared-pages/BokingSystem/BookNow';
 
 const WebSite = () => {
+const [booking, setBooking]=useState('')
+
     return (
         <div className='lg:px-36 mb-5'>
 
@@ -25,6 +28,10 @@ const WebSite = () => {
                             <h3 className='flex justify-start text-sky-400'>৳400</h3>
                             <button className='btn btn-link text-sky-400'>Show more</button>
                         </div>
+
+                        <label htmlFor="booking-modal"
+                            onClick={()=>setBooking("")}
+                            className="btn btn-sm btn-outline text-sky-500">Book Now</label>
                     </div>
                 </div>
 
@@ -41,6 +48,9 @@ const WebSite = () => {
                             <h3 className='flex justify-start text-sky-400'>৳400</h3>
                             <button className='btn btn-link text-sky-400'>Show more</button>
                         </div>
+                        <label htmlFor="booking-modal"
+                            onClick={()=>setBooking("")}
+                            className="btn btn-sm btn-outline text-sky-500">Book Now</label>
                     </div>
                     
                 </div>
@@ -57,6 +67,10 @@ const WebSite = () => {
                             <h3 className='flex justify-start text-sky-400'>৳700</h3>
                             <button className='btn btn-link text-sky-400'>Show more</button>
                         </div>
+
+                        <label htmlFor="booking-modal"
+                            onClick={()=>setBooking("")}
+                            className="btn btn-sm btn-outline text-sky-500">Book Now</label>
                     </div>
                 </div>
 
@@ -74,6 +88,10 @@ const WebSite = () => {
                             <h3 className='flex justify-start text-sky-400'>৳500</h3>
                             <button className='btn btn-link text-sky-400'>Show more</button>
                         </div>
+
+                        <label htmlFor="booking-modal"
+                            onClick={()=>setBooking("")}
+                            className="btn btn-sm btn-outline text-sky-500">Book Now</label>
                     </div>
                 </div>
 
@@ -91,6 +109,10 @@ const WebSite = () => {
                             <h3 className='flex justify-start text-sky-400'>৳800</h3>
                             <button className='btn btn-link text-sky-400'>Show more</button>
                         </div>
+
+                        <label htmlFor="booking-modal"
+                            onClick={()=>setBooking("")}
+                            className="btn btn-sm btn-outline text-sky-500">Book Now</label>
                     </div>
                 </div>
 
@@ -106,6 +128,11 @@ const WebSite = () => {
                 </div>
 
             </div>
+
+
+            <BookNow>
+                setBooking={setBooking}
+            </BookNow>
         </div>
     );
 };

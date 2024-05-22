@@ -11,6 +11,12 @@ import Honey from "../../../Single-pages/HoneyItems/Honey";
 import Category from "../../Category/Category";
 import Shops from "../../../Single-pages/OnlineShops/Shops/Shops";
 import SignUp from "../../../Single-pages/WebSecurity/CreateAC/SignUp";
+import Dashboard from "../../../Dashboard/Dashboard/Dashboard";
+import PrivateRoute from "../../../Single-pages/WebSecurity/PrivateRoute/PrivateRoute";
+import LayOutDashBoard from "../../../Dashboard/DashboardLayout/LayOutDashBoard";
+import AddProducts from "../../../Dashboard/AddProductsPages/AddProducts";
+import AllUsers from "../../../Dashboard/AllUsers/AllUsers";
+
 
 
 
@@ -45,8 +51,9 @@ export const router =createBrowserRouter([
                 element:<Fashion></Fashion>
             },
             {
-                path:"/contact",
-                element:<Contact></Contact>
+                path:"/contact/:id",
+                element:<Contact></Contact>,
+                loader:({params})=>fetch(`https://used-products-server-gold.vercel.app/catagory/${params.id}`)
             },
             {
                 path:"/login",
@@ -67,6 +74,22 @@ export const router =createBrowserRouter([
             {
                 path:"/login",
                 element:<Login></Login>
+            }
+        ])
+
+        
+    },
+    {
+        path:"/dashboard",
+        element:<PrivateRoute><LayOutDashBoard></LayOutDashBoard></PrivateRoute>,
+        children:([
+            {
+                path:"/dashboard/addproduct",
+                element:<AddProducts></AddProducts>
+            },
+            {
+                path:"/dashboard/alluser",
+                element:<AllUsers></AllUsers>
             }
         ])
     }

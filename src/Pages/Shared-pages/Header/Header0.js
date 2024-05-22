@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FaRegHeart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { WebContext } from '../../../Context/AuthContext/AuthContext';
 
 
 
 // secound Header
 
 const Header0 = () => {
+    const {user}=useContext(WebContext);
+
+    console.log(user)
     return (
         <div className='lg:px-36 flex bg-sky-100'>
             <div className="lg:hidden dropdown">
@@ -23,6 +27,9 @@ const Header0 = () => {
                         </ul>
                     </li>
                     <li><Link to={"/contact"}>Contact Us</Link></li>
+                    {
+                        user?.uid ? <li><Link to={"/dashboard"}>Dash board</Link></li> : " "
+                    }
                 </ul>
             </div>
 
@@ -54,6 +61,9 @@ const Header0 = () => {
                         </details>
                     </li>
                     <li><Link to={"/contact"} className=''>Contact us</Link></li>
+                    {
+                        user?.uid ? <li><Link to={"/dashboard"}>Dash board</Link></li> : " "
+                    }
                 </ul>
             </div>
 

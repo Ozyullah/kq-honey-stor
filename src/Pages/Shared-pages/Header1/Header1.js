@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header1 = () => {
     return (
         <div className=' bg-sky-50 lg:px-36'>
-            <div className="">
+            {/* <div className="">
                 <div className="">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden flex justify-start">
@@ -39,13 +39,13 @@ const Header1 = () => {
                         <li><Link to={"/contact"} className='py-0'>Contact us</Link></li>
                     </ul>
                 </div>
-                <div className="navbar navbar-end">
+                <div className="navbar navbar-end"> */}
                     {/* <div>
                     <p>Customer Support</p>
                     <p>Call us  01609111813</p>
                    </div> */}
-                </div>
-            </div>
+                {/* </div> */}
+            {/* // </div> */}
         </div>
     );
 };

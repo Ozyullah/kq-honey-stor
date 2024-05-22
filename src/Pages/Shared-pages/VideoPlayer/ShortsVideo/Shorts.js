@@ -61,7 +61,7 @@ const Shorts = () => {
 
                 <ReactPlayer
                     className="playerStyle"
-                    url={"https://www.youtube.com/watch?v=5_A4J-1dOFE"}
+                    url={"https://www.youtube.com/watch?v=hWVJucr3Il8"}
                     width={"180px"}
                     height={"250px"}
                     style={{}}
@@ -72,7 +72,7 @@ const Shorts = () => {
 
                 <ReactPlayer
                     className="playerStyle"
-                    url={"https://www.youtube.com/watch?v=ECfUt54e7bE"}
+                    url={"https://www.youtube.com/watch?v=Dt4Zs0lhnCM"}
                     width={"180px"}
                     height={"250px"}
                     style={{}}
@@ -82,7 +82,7 @@ const Shorts = () => {
 
                 <ReactPlayer
                     className="playerStyle"
-                    url={"https://www.youtube.com/watch?v=Bulj52rd6yE"}
+                    url={"https://www.youtube.com/watch?v=7WrHNF9KKso"}
                     width={"180px"}
                     height={"250px"}
                     style={{}}
@@ -92,7 +92,7 @@ const Shorts = () => {
 
                 <ReactPlayer
                     className="playerStyle"
-                    url={"https://www.youtube.com/watch?v=GCFPl1fqYvw"}
+                    url={"https://www.youtube.com/watch?v=-WyyrKbUruA"}
                     width={"180px"}
                     height={"250px"}
                     style={{}}
@@ -102,7 +102,7 @@ const Shorts = () => {
 
                 <ReactPlayer
                     className="playerStyle"
-                    url={"https://www.youtube.com/watch?v=GCFPl1fqYvw"}
+                    url={"https://www.youtube.com/watch?v=tTJzrAoLuS4"}
                     width={"180px"}
                     height={"250px"}
                     style={{}}
@@ -112,7 +112,7 @@ const Shorts = () => {
 
                 <ReactPlayer
                     className="playerStyle"
-                    url={"https://www.youtube.com/watch?v=GCFPl1fqYvw"}
+                    url={"https://www.youtube.com/watch?v=N1K_rfpHfw8"}
                     width={"180px"}
                     height={"250px"}
                     style={{}}
@@ -122,7 +122,7 @@ const Shorts = () => {
 
                 <ReactPlayer
                     className="playerStyle"
-                    url={"https://www.youtube.com/watch?v=GCFPl1fqYvw"}
+                    url={"https://www.youtube.com/watch?v=UKsm7nK_zDQ"}
                     width={"180px"}
                     height={"250px"}
                     style={{}}
@@ -132,7 +132,7 @@ const Shorts = () => {
 
                 <ReactPlayer
                     className="playerStyle"
-                    url={"https://www.youtube.com/watch?v=GCFPl1fqYvw"}
+                    url={"https://www.youtube.com/watch?v=BDEyCkOyUq4"}
                     width={"180px"}
                     height={"250px"}
                     style={{}}
@@ -142,7 +142,7 @@ const Shorts = () => {
 
                 <ReactPlayer
                     className="playerStyle"
-                    url={"https://www.youtube.com/watch?v=GCFPl1fqYvw"}
+                    url={"https://www.youtube.com/watch?v=JzLoo8cFJBI"}
                     width={"180px"}
                     height={"250px"}
                     style={{}}
@@ -152,7 +152,7 @@ const Shorts = () => {
 
                 <ReactPlayer
                     className="playerStyle"
-                    url={"https://www.youtube.com/watch?v=GCFPl1fqYvw"}
+                    url={"https://www.youtube.com/watch?v=B9VbKOfAFUQ"}
                     width={"180px"}
                     height={"250px"}
                     style={{}}
@@ -162,7 +162,7 @@ const Shorts = () => {
 
                 <ReactPlayer
                     className="playerStyle"
-                    url={"https://www.youtube.com/watch?v=GCFPl1fqYvw"}
+                    url={"https://www.youtube.com/watch?v=ntDq2VeJr9Q"}
                     width={"180px"}
                     height={"250px"}
                     style={{}}
@@ -172,7 +172,7 @@ const Shorts = () => {
 
                 <ReactPlayer
                     className="playerStyle"
-                    url={"https://www.youtube.com/watch?v=SWI-GTVKCcM"}
+                    url={"https://www.youtube.com/watch?v=40b7rFjwPwY"}
                     width={"180px"}
                     height={"250px"}
                     style={{}}
